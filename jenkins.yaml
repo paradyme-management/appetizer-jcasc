@@ -1,0 +1,13 @@
+credentials:
+  system:
+    domainCredentials:
+      - credentials:
+          - usernamePassword:
+              id: "appetizer-github-credentials"
+              password: "dbd9afe4fe1e4cc0787e698651fe1b8b22517395"
+              scope: GLOBAL
+              username: "WilliamLu2019"
+jobs:
+  - url: https://paradyme-management.github.io/appetizer-jcasc/folder.groovy
+  - url: https://paradyme-management.github.io/appetizer-jcasc/jobs.groovy    
+    
