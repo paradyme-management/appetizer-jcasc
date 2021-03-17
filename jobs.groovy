@@ -31,14 +31,14 @@ multibranchPipelineJob("$jobFolderName/appetizer-server") {
     }
 }
 
-multibranchPipelineJob("$jobFolderName/appetizer-ui-image") {
+multibranchPipelineJob("$jobFolderName/appetizer-ui") {
     branchSources {
         github {
             id(UUID.randomUUID().toString())
             scanCredentialsId(applicationGithubCredId)
             checkoutCredentialsId(applicationGithubCredId)
             repoOwner(orgName)
-            repository("appetizer-server")
+            repository("appetizer-ui")
             buildOriginBranch(true)
             buildOriginBranchWithPR(true)
             buildOriginPRHead(true)
@@ -67,7 +67,7 @@ multibranchPipelineJob("$jobFolderName/appetizer-server-image") {
             scanCredentialsId(applicationGithubCredId)
             checkoutCredentialsId(applicationGithubCredId)
             repoOwner(orgName)
-            repository("appetizer-server")
+            repository("appetizer-server-image")
             buildOriginBranch(true)
             buildOriginBranchWithPR(true)
             buildOriginPRHead(true)
@@ -89,14 +89,14 @@ multibranchPipelineJob("$jobFolderName/appetizer-server-image") {
     }
 }
 
-multibranchPipelineJob("$jobFolderName/appetizer-ui") {
+multibranchPipelineJob("$jobFolderName/appetizer-ui-image") {
     branchSources {
         github {
             id(UUID.randomUUID().toString())
             scanCredentialsId(applicationGithubCredId)
             checkoutCredentialsId(applicationGithubCredId)
             repoOwner(orgName)
-            repository("appetizer-server")
+            repository("appetizer-ui-image")
             buildOriginBranch(true)
             buildOriginBranchWithPR(true)
             buildOriginPRHead(true)
@@ -125,7 +125,7 @@ multibranchPipelineJob("$jobFolderName/appetizer-helm") {
             scanCredentialsId(applicationGithubCredId)
             checkoutCredentialsId(applicationGithubCredId)
             repoOwner(orgName)
-            repository("appetizer-server")
+            repository("appetizer-helm")
             buildOriginBranch(true)
             buildOriginBranchWithPR(true)
             buildOriginPRHead(true)
