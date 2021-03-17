@@ -8,6 +8,6 @@ credentials:
               scope: GLOBAL
               username: "WilliamLu2019"
 jobs:
-  - url: https://raw.githubusercontent.com/paradyme-management/appetizer-jcasc/folder.groovy
-  - url: https://raw.githubusercontent.com/paradyme-management/appetizer-jcasc/jobs.groovy    
-    
+  - url: https://raw.githubusercontent.com/paradyme-management/appetizer-jcasc/main/folder.groovy
+  - url: https://raw.githubusercontent.com/paradyme-management/appetizer-jcasc/main/jobs.groovy    
+
