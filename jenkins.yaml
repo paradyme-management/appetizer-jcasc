@@ -4,9 +4,9 @@ credentials:
       - credentials:
           - usernamePassword:
               id: "appetizer-github-credentials"
-              password: "dbd9afe4fe1e4cc0787e698651fe1b8b22517395"
+              password: "4189301bdf4735d755ff5970c9105cc2dc3b2f3d"
               scope: GLOBAL
-              username: "WilliamLu2019"
+              username: "anthony-zawacki"
 jobs:
   - url: https://raw.githubusercontent.com/paradyme-management/appetizer-jcasc/main/folder.groovy
   - url: https://raw.githubusercontent.com/paradyme-management/appetizer-jcasc/main/jobs.groovy    
