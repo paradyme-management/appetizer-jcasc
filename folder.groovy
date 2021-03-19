@@ -38,7 +38,7 @@ folder("appetizer") {
                 }
                 configurationProvider {
                     scmPipelineConfigurationProvider {
-                        baseDir('appetizer')
+                        baseDir('appetizer2')
                         scm {
                             gitSCM {
                                 userRemoteConfigs {
