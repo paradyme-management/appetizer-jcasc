@@ -27,7 +27,7 @@ folder("appetizer") {
                                         gitTool('/usr/bin/git')
                                         branches {
                                             branchSpec {
-                                                name ('*/jte-2.0')
+                                                name ('*/jte-2.0-acz')
                                             }
                                         }
                                     }
@@ -57,7 +57,7 @@ folder("appetizer") {
                                 gitTool('/usr/bin/git')
                                 branches {
                                     branchSpec {
-                                        name ('*/jte-2.0')
+                                        name ('*/jte-2.0-acz')
                                     }
                                 }
                             }
