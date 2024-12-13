@@ -1,6 +1,6 @@
 String jobFolderName = 'appetizer'
 String orgName = 'paradyme-management'
-String applicationGithubCredId = 'appetizer-github-credentials'
+String applicationGithubCredId = 'github-id'
 
 multibranchPipelineJob("$jobFolderName/appetizer-server") {
     branchSources {
