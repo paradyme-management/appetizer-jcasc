@@ -1,6 +1,8 @@
-String jenkinsTemplateLibraryUrl = 'https://github.com/paradyme-management/jte-the-basics.git'
+String jenkinsTemplateLibraryUrl = 'https://github.com/paradyme-management/jenkins-template-engine.git'
 String githubCredId = 'jenkins-library-access'
 folder("appetizer") {
+    displayName("appetizer")
+    description("Folder for the appetizer application.")
     properties {
         templateConfigFolderProperty {
             tier {
@@ -21,13 +23,13 @@ folder("appetizer") {
                                         }
                                         browser {
                                             githubWeb {
-                                                repoUrl('https://github.com/paradyme-management/jte-the-basics')
+                                                repoUrl('https://github.com/paradyme-management/jenkins-template-engine')
                                             }
                                         }
                                         gitTool('/usr/bin/git')
                                         branches {
                                             branchSpec {
-                                                name ('*/jte-2.0-acz')
+                                                name ('*/main')
                                             }
                                         }
                                     }
@@ -38,7 +40,7 @@ folder("appetizer") {
                 }
                 configurationProvider {
                     scmPipelineConfigurationProvider {
-                        baseDir('appetizer2')
+                        baseDir('infrastructure')
                         scm {
                             gitSCM {
                                 userRemoteConfigs {
@@ -51,13 +53,13 @@ folder("appetizer") {
                                 }
                                 browser {
                                     githubWeb {
-                                        repoUrl('https://github.com/paradyme-management/jte-the-basics')
+                                        repoUrl('https://github.com/paradyme-management/jenkins-template-engine')
                                     }
                                 }
                                 gitTool('/usr/bin/git')
                                 branches {
                                     branchSpec {
-                                        name ('*/jte-2.0-acz')
+                                        name ('*/main')
                                     }
                                 }
                             }
